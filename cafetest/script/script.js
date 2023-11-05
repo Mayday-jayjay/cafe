@@ -37,3 +37,10 @@ jsArrow.addEventListener("click",()=>{
 moreArrow.addEventListener("click",()=>{
     navLinks.classList.toggle("show3")
 })
+
+//section-bg
+window.addEventListener("scroll",() =>{
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('navBg', window.scrollY > 0)
+})
+
