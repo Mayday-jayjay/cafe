@@ -9,7 +9,7 @@
     <!-- box-icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body id="top">
     <nav>
         <div class="navbar">
             <i class='bx bx-menu'></i>
@@ -55,7 +55,6 @@
                         </ul>
                     </li>
                     <li class="nav-user"><a href="">會員登入</a></li>
-                    <li class="nav-user"><a href="">test</a></li>
                 </ui>
             </div>
 
@@ -82,12 +81,12 @@
             </div>
         </div>
     </nav>
-   <!-- main -->
-   <section class="section-bg">
-    <h1>傑森咖啡</h1>
-    <a href="#section-introduce">
-        <i class='bx bx-chevrons-down'></i>
-    </a>
+    <!-- main -->
+    <section class="section-bg">
+        <h1>傑森咖啡</h1>
+        <a href="#section-introduce">
+            <i class='bx bx-chevrons-down dot'></i>
+        </a>
     </section>
 
     <section id="section-introduce" class="introduce">
@@ -100,15 +99,95 @@
             </a>
         </div>
     </section>
+    <!-- news -->
+    <section class="news">
+        <div class="header"> 
+            <div class="image-one">
+                <a href="">
+                    <div class="shadow"></div>
+                    <img src="./images/index/cafe.jpg" alt="cafe">
+                    <p>經典咖啡</p>
+                </a>
+            </div>        
+            <div class="image-flex">
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img src="./images/index/dessert.jpg" alt="dessert">
+                        <p>甜點</p>
+                    </a>
+                </div>
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img class="move" src="./images/index/food.jpg" alt="food">
+                        <p>輕食</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!---------------------->
+        <div class="header"> 
+            <div class="image-flex">
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img src="./images/index/about.jpg" alt="dessert">
+                        <p>關於我們</p>
+                    </a>
+                </div>
+                <div class="image-two">
+                    <a href="">
+                        <div class="shadow"></div>
+                        <img class="move" src="./images/index/question.jpg" alt="food">
+                        <p>常見問題</p>
+                    </a>
+                </div>
+            </div>
 
-    <h1>歡迎來到JS咖啡</h1>
+            <div class="image-one">
+                <a href="">
+                    <div class="shadow"></div>
+                    <img src="./images/index/shop.jpg" alt="cafe">
+                    <p>線上商店</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="container">
+        <div class="loader">
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot3"></div>
+        </div>
+    </div> -->
     <!-- 回頁首 -->
     <div id="angle" class="angle mb-3">
         <a href="#top">
-            <i class='bx bx-chevrons-down'></i> 
+            <i class='bx bx-chevrons-up'></i>
         </a>
     </div>   
-    <footer></footer>
+
+    <footer>
+
+        <div class="logo">
+            <a href="./index.html">
+                <img class="imm" src="./images/favicon.ico" alt="logo">
+            </a>
+        </div>
+
+        <div class="text">
+            <ul>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="">關於我們</a></li>
+                <li><a href="">線上商店</a></li>
+                <li><a href="">常見問題</a></li>
+                <li><a href=""登入></a></li>
+            </ul>
+            <p>DESIGN BY CHANG CHUN-CHIEH</p>
+        </div>
+    </footer>
     <script src="./script/script.js"></script>
 </body>
 </html>

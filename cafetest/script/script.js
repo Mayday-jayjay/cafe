@@ -1,3 +1,4 @@
+// navbar
 let navbar = document.querySelector(".navbar");
 let searchBox = document.querySelector(".search-box .bx-search");
 
@@ -9,8 +10,6 @@ searchBox.addEventListener("click",()=>{
         searchBox.classList.replace("bx-x" , "bx-search")
     }
 })
-
-
 
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let closeOpenBtn = document.querySelector(".nav-links .bx-x");
@@ -38,9 +37,8 @@ moreArrow.addEventListener("click",()=>{
     navLinks.classList.toggle("show3")
 })
 
-//section-bg
-window.addEventListener("scroll",() =>{
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('navBg', window.scrollY > 0)
+// toggle-bg
+window.addEventListener("scroll",()=>{
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('sticky', window.scrollY > 0);
 })
-
