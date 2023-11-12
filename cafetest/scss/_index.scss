@@ -139,7 +139,6 @@
 
 @media(max-width:954px){
     .section-bg{
-        min-height: 600px;
         h1{
             font-size: 4rem;
         }
@@ -177,16 +176,11 @@
 }
 @media(max-width:540px){
     .section-bg{
-        min-height: 450px;
-
         h1{
             letter-spacing: 1.8rem;
-            padding-top: 140px;
-            
             font-size: 2.5rem;
         }
         i{
-            top: 80%;
             font-size: 2rem;
         }
     }
@@ -257,14 +251,11 @@
 }
 @media(max-width:320px){
     .section-bg{
-        min-height: 200px;
         h1{
             letter-spacing: 1rem;
-            padding-top: 80px;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
         }
         i{
-            top: 80%;
             font-size: 1rem;
         }
     }
