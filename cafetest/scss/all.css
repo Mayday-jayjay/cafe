@@ -958,4 +958,71 @@ footer .text p {
 }
 .container.active .lost-ps {
   height: 400px;
+}
+
+.menu-container {
+  background: #ffffff;
+  max-width: 1250px;
+  margin: 20px auto;
+}
+.menu-container .menu-select {
+  width: 625px;
+  padding: 25px;
+}
+.menu-container .menu-select select {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.menu-container .menu-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-container .menu-flex h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #7F624C;
+}
+.menu-container .menu-flex .latte, .menu-container .menu-flex .other {
+  width: 500px;
+  text-align: center;
+  margin-top: 10px;
+}
+.menu-container .menu-flex table {
+  margin: 10px auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+.menu-container .menu-flex table tr {
+  text-align: left;
+}
+.menu-container .menu-flex table tr th {
+  border-bottom: 1px solid grey;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px;
+  opacity: 0.8;
+}
+.menu-container .menu-flex table tr td {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #1b1b1b;
+  opacity: 0.8;
+}
+
+@media (max-width: 1040px) {
+  .menu-container .menu-select {
+    width: auto;
+    padding: 25px;
+  }
+  .menu-container .menu-flex {
+    flex-direction: column;
+  }
+  .menu-container .menu-flex .latte, .menu-container .menu-flex .other {
+    width: 100%;
+    text-align: center;
+    padding: 10px 40px;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=all.css.map */
