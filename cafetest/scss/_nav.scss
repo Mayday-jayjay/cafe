@@ -32,7 +32,6 @@
         font-weight: 900;
         width: 100%;
         position: absolute;
-        // top: 90%;
         bottom: 3%;
         left: 0;
         transition: all 0.7s ease;
@@ -42,7 +41,6 @@
         }
     }
 }
-
 
 nav{
     position: fixed;
@@ -64,7 +62,7 @@ nav{
         margin: auto;
         align-items: center;
         justify-content: space-between;
-        padding: 0 50px;
+        padding: 0 30px;
         .logo{
             max-width: 200px;
             line-height: 10px;
@@ -93,7 +91,7 @@ nav{
                     position: relative;
                     display: flex;
                     align-items: center;
-                    padding: 0 18px;
+                    padding: 0 20px;
                     list-style: none;
                     a{
                         height: 100%;
@@ -279,8 +277,6 @@ footer{
             color: $white;
         }
     }
-
-
 }
 
 // 回頁首
@@ -307,28 +303,18 @@ footer{
     }
   }
 
-// @media(max-width:954px){
-//     nav .navbar{
-//         max-width: 100%;
-//         padding: 0 25px;
-//         .logo a{
-//             font-size: 26px;
-//         }
-//         .nav-links .links li{
-//             padding: 0 10px;
-//             a{
-//                 font-size: 15px;
-//             }
-//         }
-//     }
-// }
+@media(max-width:954px){
+    nav .navbar .nav-links .links li{
+        padding: 0 10px;
+    }
+}
 @media(max-width:820px){
     .navbar .logo img{
         display: none;
     }
     nav .navbar .nav-links{
         z-index: 99;
-        display: block;
+        display: none;
         background: $primary-color;
         position: fixed;
         top: 0;
@@ -399,12 +385,6 @@ footer{
 }
 
 @media(max-width:420px){
-    // nav .navbar .nav-links {
-    //     max-width: 420px;
-    //   }
-    // .navbar .logo img{
-    //     display: block;
-    // }
     nav .navbar{ 
         .logo{
             .text{
@@ -438,9 +418,6 @@ footer{
 }
 
 @media(max-width:320px){
-    // nav .navbar .nav-links {
-    //     max-width: 320px;
-    //   }
     nav .navbar{ 
         .nav-links {
             max-width: 320px;

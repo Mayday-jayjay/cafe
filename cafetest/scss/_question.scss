@@ -1,6 +1,3 @@
-// body{
-//     background: #07141d;
-// }
 #accordion{
     margin: 20px auto;
     max-width: 1080px;
@@ -12,7 +9,6 @@
         margin-bottom: 10px;
         background: $white;
         padding: 10px;
-        // margin: 5px;
         border-radius: 4px;
         label{
             padding: 10px;
@@ -22,9 +18,6 @@
             font-weight: 500;
             cursor: pointer;
             color: $cafe;
-            // &::before{
-            //     content: 'Q:';
-            // }
             span{
                 transform: rotate(90deg);
                 font-size: 1.4rem;

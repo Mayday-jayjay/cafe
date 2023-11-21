@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     background: url(../images/login/bg.jpg) no-repeat;
-    // height: 100vh;
     background-position: center;
     background-size: cover;
 }
@@ -25,7 +24,6 @@
             position: relative;
             font-size: 27px;
             font-weight: 600;
-            // left: 35%;
             &::before{
                 content: '';
                 position: absolute;

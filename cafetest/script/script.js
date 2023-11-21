@@ -17,6 +17,7 @@ let navLinks = document.querySelector(".nav-links");
 
 menuOpenBtn.addEventListener("click",()=>{
     navLinks.style.left = "0";
+    navLinks.style.display = 'block';
 })
 
 closeOpenBtn.addEventListener("click",()=>{
@@ -24,55 +25,58 @@ closeOpenBtn.addEventListener("click",()=>{
 })
 
 let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-let jsArrow = document.querySelector(".js-arrow");
-let moreArrow = document.querySelector(".more-arrow");
+// let jsArrow = document.querySelector(".js-arrow");
+// let moreArrow = document.querySelector(".more-arrow");
 
-htmlcssArrow.addEventListener("click",()=>{
-    navLinks.classList.toggle("show1")
-})
-jsArrow.addEventListener("click",()=>{
-    navLinks.classList.toggle("show2")
-})
-moreArrow.addEventListener("click",()=>{
-    navLinks.classList.toggle("show3")
-})
+    htmlcssArrow.addEventListener("click",()=>{
+        navLinks.classList.toggle("show1")
+    })
+    // jsArrow.addEventListener("click",()=>{
+    //     navLinks.classList.toggle("show2")
+    // })
+    // moreArrow.addEventListener("click",()=>{
+    //     navLinks.classList.toggle("show3")
+    // })
 
-// toggle-bg
-window.addEventListener("scroll",()=>{
-    var nav = document.querySelector('nav');
-    nav.classList.toggle('sticky', window.scrollY > 0);
-})
+    // toggle-bg
+    window.addEventListener("scroll",()=>{
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('sticky', window.scrollY > 0);
+    })
 
 // login
-const container = document.querySelector(".container"),
-    pwShowHide = document.querySelectorAll(".showHidePw"),
-    pwFields = document.querySelectorAll(".password"),
-    signUp = document.querySelector(".signup-link"),
-    login = document.querySelector(".login-link");
+// const container = document.querySelector(".container"),
+//     pwShowHide = document.querySelectorAll(".showHidePw"),
+//     pwFields = document.querySelectorAll(".password"),
+//     signUp = document.querySelector(".signup-link"),
+//     login = document.querySelector(".login-link");
     
-    pwShowHide.forEach(eyeIcon =>{
-        eyeIcon.addEventListener("click",()=>{
-            pwFields.forEach(pwField=>{
-                if(pwField.type === "password"){
-                    pwField.type = "text";
-                    pwShowHide.forEach(icon =>{
-                        icon.classList.replace("bxs-hide","bxs-show")
-                    })
-                }else{
-                    pwField.type = "password";
-                    pwShowHide.forEach(icon =>{
-                        icon.classList.replace("bxs-show","bxs-hide")
-                    })
-                }
-            })
-        })
-    })
+//     pwShowHide.forEach(eyeIcon =>{
+//         eyeIcon.addEventListener("click",()=>{
+//             pwFields.forEach(pwField=>{
+//                 if(pwField.type === "password"){
+//                     pwField.type = "text";
+//                     pwShowHide.forEach(icon =>{
+//                         icon.classList.replace("bxs-hide","bxs-show")
+//                     })
+//                 }else{
+//                     pwField.type = "password";
+//                     pwShowHide.forEach(icon =>{
+//                         icon.classList.replace("bxs-show","bxs-hide")
+//                     })
+//                 }
+//             })
+//         })
+//     })
+    // change login
+    // signUp.addEventListener("click", ()=>{
+    //     container.classList.add("active");
+    // })
+    // login.addEventListener("click", ()=>{
+    //     container.classList.remove("active");
+    // })
 
-    //change login
-    signUp.addEventListener("click", ()=>{
-        container.classList.add("active");
-    })
-    login.addEventListener("click", ()=>{
-        container.classList.remove("active");
-    })
+
+
+
 
